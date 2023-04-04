@@ -1,2 +1,2 @@
-# PHP-Self_study
-This is for educational purpose
+# PHP-tutorials
+This is educational purposes
