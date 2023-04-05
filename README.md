@@ -1,2 +1,2 @@
 # PHP-tutorials
-This is educational purposes
+This is for educational purpose only.
