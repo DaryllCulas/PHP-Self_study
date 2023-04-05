@@ -1,6 +1,8 @@
 <?php
 
-// Setting cookies
+// Setting cookies for 'persisting_data_with_cookies.php'
+
+
 setcookie('user_name', $_POST['user_name']);
 setcookie('title', $_POST['title']);
 setcookie('author', $_POST['author']);

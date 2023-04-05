@@ -1,4 +1,5 @@
 <?php
+
 /* 
 To define our own functions, we use the syntax below:
 
@@ -67,3 +68,27 @@ echo 'The sum of addNumbers() is '.addNumbers(6, 6, 6);
 echo '<br>';
 echo '<br>';
 
+/********** SAMPLE ***********/
+# if we use this method in order to invoke this function from index.php
+function loginMessage() {
+    if(isset($_GET['user_name']) && isset($_GET['school'])) {
+        return "You are ". $_GET['user_name'];
+        //return "You are ". $_COOKIE['user_name'];
+
+    }
+    
+    else {
+        return "You are not authenticated!";
+    }
+    
+}
+
+function printableTitle(array $book): string {
+    $result = '<i>'. $book['title'].'</i> - ' .$book['author'];
+    if(!$book['available']) {
+        $result .= '<b> Not available </b>';
+    }
+    return $result;
+
+
+}
